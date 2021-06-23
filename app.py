@@ -21,7 +21,7 @@ app = Sanic(__name__)
 app.using_oauth = False
 
 Session(app, interface=InMemorySessionInterface())
-app.static("/static", "./static")
+app.static(prefix + "/static", "./static")
 
 jinja_env = Environment(loader=PackageLoader("app", "templates"))
 
