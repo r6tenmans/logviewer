@@ -159,7 +159,7 @@
                     }
                     removePermaHover()
                     if (should_add) {
-                        history.pushState(null, null, '#' + child.id);
+                        window.location = "#" + child.id
                         elem.classList.add('perma_hover')
                     }
                     return 
